@@ -17,16 +17,28 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/kdschneider/strongr/actions/workflows/r-check-standard.yaml/badge.svg)](https://github.com/kdschneider/strongr/actions/workflows/r-check-standard.yaml)
 <!-- badges: end -->
 
+> This package is very much work in progress!
+
+## Overview
+
 The goal of strongr is to allow easy creation of workout-plans and logging of progress.
 
-## Functions
-### Working
+As of now the planned functions are:
 
-`emptiness`
-
-### Planned
-
-  - `create_plan()`: Create a workout-plan from a set of input parameters or workouts.
+  - `create_plan()`: Create a workout-plan from a set of input parameters and/or workouts.
   - `create_workout()`: Create a specific workout. One or more workouts  can be used to create a plan.
   - `add_training()`: Add a training session to the workout-plan. You should be able to specifiy if a set was failed. 
   - `get_next_training()`: Get weights (maybe with warmup weights) for the next training session. 
+  - `deload()`: Failed `x` sets in a row? Time to face the truth and deload...
+  
+## Installation
+
+```{r eval = FALSE}
+# Install the development version from GitHub:
+# install.packages("devtools")
+devtools::install_github("kdschneider/strongr")
+```
+
+## Usage
+
+`no use as of now, just garbage...`
