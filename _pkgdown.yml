@@ -4,4 +4,4 @@ home:
 url: https://kdschneider.github.io/strongr
 template:
   params:
-    bootswatch: cerulean
+    bootswatch: journal
