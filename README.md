@@ -4,6 +4,8 @@
 # strongr
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/kdschneider/strongr/actions/workflows/r-check-standard.yaml/badge.svg)](https://github.com/kdschneider/strongr/actions/workflows/r-check-standard.yaml)
 <!-- badges: end -->
 
 The goal of strongr is to allow easy creation of workout-plans and
