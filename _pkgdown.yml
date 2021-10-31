@@ -3,4 +3,5 @@ home:
   description: Create Workout-Plans And Log Your Progress
 url: https://kdschneider.github.io/strongr
 template:
-  opengraph
+  params:
+    bootswatch: cerulean
