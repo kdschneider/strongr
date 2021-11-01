@@ -1,15 +1,18 @@
 Package: strongr
-Title: Create Workout-Plans And Log Progress
+Title: Create Workout-Plans and Log Progress
 Version: 0.0.0.9000
 Authors@R: 
-    person("Konstantin", "Schneider", , "ks@konstantin-schneider.eu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Konstantin", "Schneider", email = "ks@konstantin-schneider.eu", role = c("aut", "cre"))
 Description: Create workout-plans form a set of input parameters. Log your progress with built in functions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
-URL: https://kdschneider.github.io/strongr
+Language: en-US
+URL: https://kdschneider.github.io/strongr/
+BugReports: https://github.com/cosimameyer/overviewR/issues
+Depends:
+    R (>= 4.1.0)
 Suggests: 
     covr,
     testthat (>= 3.0.0)
