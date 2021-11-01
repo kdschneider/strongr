@@ -2,8 +2,6 @@ home:
   title: strongr
   description: Create Workout-Plans And Log Your Progress
 url: https://kdschneider.github.io/strongr
-template:
-  package: tidytemplate
 authors:
   Konstantin Schneider:
     href: https://kdschneider.github.io/
