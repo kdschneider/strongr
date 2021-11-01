@@ -3,5 +3,7 @@ home:
   description: Create Workout-Plans And Log Your Progress
 url: https://kdschneider.github.io/strongr
 template:
-  params:
-    bootswatch: journal
+  package: tidytemplate
+authors:
+  Konstantin Schneider:
+    href: https://kdschneider.github.io/
