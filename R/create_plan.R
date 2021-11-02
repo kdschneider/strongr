@@ -4,8 +4,18 @@
 #' @return A dataframe containing all training sessions.
 #' @export
 #'
-create_plan <- function() {
-  print("garbage")
+create_plan <- function(
+  start = Sys.Date(),
+  end = NA,
+  duration = lubridate::duration(num = 12, unit = "weeks"),
+  workouts,
+  training_days = c("Mon", "Wed", "Fri")
+  ) {
+
+  # tibble(
+  #   date, workout, exercise
+  # )
+
 }
 
 #' @title Create a workout
@@ -24,13 +34,15 @@ create_plan <- function() {
 create_workout <- function(
   exercise,
   nset = 3,
-  nrep = 5
+  nrep = 5,
+  step = 1
   ) {
 
   tidyr::tibble(
     exercise,
     sets = nset,
-    reps = nrep
+    reps = nrep,
+    step = step
   )
 
 }
