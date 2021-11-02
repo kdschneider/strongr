@@ -14,6 +14,7 @@ BugReports: https://github.com/cosimameyer/overviewR/issues
 Depends:
     R (>= 4.1.0)
 Suggests: 
+    rmarkdown,
     covr,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

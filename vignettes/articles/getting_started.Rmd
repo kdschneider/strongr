@@ -1,0 +1,45 @@
+---
+title: "Getting Started"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(strongr)
+```
+
+The `strongr` packages main functionality is to create complex workout-plans with simple tools. 
+
+# Create a workout-plan
+
+Each workout-plan is assembled from workouts which can be created with the `create_workout()` function.
+
+```{r}
+A <- 
+  create_workout(
+    exercise = c("benchpress", "squat", "deadlift"),
+    step = c(2, 5, 5)
+  )
+
+B <-
+  create_workout(
+    exercise = c("overhead_press", "squat", "deadlift"),
+    step = c(1, 5, 5)
+  )
+```
+
+```{r}
+plan <- 
+  create_plan(
+    start = lubridate::today(),
+    end = lubridate::today() + 12 * 7,
+    duration = NA,
+    workouts = c(A, B),
+  )
+```
+
