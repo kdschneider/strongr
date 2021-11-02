@@ -6,9 +6,6 @@
 \usage{
 deload()
 }
-\value{
-
-}
 \description{
 Deload weights for next training.
 }

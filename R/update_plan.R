@@ -16,7 +16,6 @@ add_training <- function() {
 
 #' Deload weights for next training.
 #'
-#' @return
 #' @export
 #'
 deload <- function() {
