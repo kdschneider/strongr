@@ -1,11 +1,11 @@
 #' @title Create workout-plan
 #' @description Use workouts/input parameters to create Workout-Plans.
 #'
-#' @param start A start date.
-#' @param end A end date (overwrites `duration`).
-#' @param duration A duration.
-#' @param workouts The workouts created with `create_workout()` to be used in the plan. The order of workouts is respected when creating the plan.
-#' @param training_days The training days of a week. Can be a numeric vector (starting with monday = 1) or weekday names (short or full length).
+#' @param start           A start date.
+#' @param end             A end date (overwrites `duration`).
+#' @param duration        A duration.
+#' @param workouts        The workouts created with `create_workout()` to be used in the plan. The order of workouts is respected when creating the plan.
+#' @param training_days   The training days of a week. Can be a numeric vector (starting with monday = 1) or weekday names (short or full length).
 #'
 #' @return A dataframe containing all training sessions.
 #' @export

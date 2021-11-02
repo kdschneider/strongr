@@ -1,19 +1,15 @@
 #' Update a workout-plan
 #'
-#' @return
 #' @export
 #'
-#' @examples
 update_plan <- function() {
 
 }
 
 #' Add a training to a workout-plan
 #'
-#' @return
 #' @export
 #'
-#' @examples
 add_training <- function() {
 
 }
@@ -23,7 +19,6 @@ add_training <- function() {
 #' @return
 #' @export
 #'
-#' @examples
 deload <- function() {
   print("sad...")
 }

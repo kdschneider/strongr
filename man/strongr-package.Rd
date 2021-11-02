@@ -14,7 +14,7 @@ Create workout-plans form a set of input parameters. Log your progress with buil
 Useful links:
 \itemize{
   \item \url{https://kdschneider.github.io/strongr/}
-  \item Report bugs at \url{https://github.com/cosimameyer/overviewR/issues}
+  \item Report bugs at \url{https://github.com/kdschneider/strongr/issues}
 }
 
 }
