@@ -4,7 +4,24 @@
 \alias{create_plan}
 \title{Create workout-plan}
 \usage{
-create_plan()
+create_plan(
+  start = Sys.Date(),
+  end = NA,
+  duration = lubridate::duration(num = 12, unit = "weeks"),
+  workouts,
+  training_days = c("Mon", "Wed", "Fri")
+)
+}
+\arguments{
+\item{start}{A start date.}
+
+\item{end}{A end date (overwrites \code{duration}).}
+
+\item{duration}{A duration.}
+
+\item{workouts}{The workouts created with \code{create_workout()} to be used in the plan. The order of workouts is respected when creating the plan.}
+
+\item{training_days}{The training days of a week. Can be a numeric vector (starting with monday = 1) or weekday names (short or full length).}
 }
 \value{
 A dataframe containing all training sessions.

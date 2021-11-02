@@ -4,7 +4,7 @@
 \alias{create_workout}
 \title{Create a workout}
 \usage{
-create_workout(exercise, nset = 3, nrep = 5)
+create_workout(exercise, nset = 3, nrep = 5, step = 1)
 }
 \arguments{
 \item{exercise}{Character vector of the exercises chosen.}
@@ -12,6 +12,8 @@ create_workout(exercise, nset = 3, nrep = 5)
 \item{nset}{Vector of number of sets per exercise. Must be either length \code{1} or equal to the length of \code{exercise}}
 
 \item{nrep}{Vector of number of repetitions per set. Must be either length \code{1} or length of \code{exercise}.}
+
+\item{step}{The step size for increasing the weight from last workout.}
 }
 \value{
 A dataframe.

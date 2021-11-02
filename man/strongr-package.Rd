@@ -4,19 +4,22 @@
 \name{strongr-package}
 \alias{strongr}
 \alias{strongr-package}
-\title{strongr: Create Workout-Plans And Log Progress}
+\title{strongr: Create Workout-Plans and Log Progress}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 Create workout-plans form a set of input parameters. Log your progress with built in functions.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://kdschneider.github.io/strongr}
+  \item \url{https://kdschneider.github.io/strongr/}
+  \item Report bugs at \url{https://github.com/cosimameyer/overviewR/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Konstantin Schneider \email{ks@konstantin-schneider.eu} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Konstantin Schneider \email{ks@konstantin-schneider.eu}
 
 }
 \keyword{internal}

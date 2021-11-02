@@ -1,6 +1,12 @@
 #' @title Create workout-plan
 #' @description Use workouts/input parameters to create Workout-Plans.
 #'
+#' @param start A start date.
+#' @param end A end date (overwrites `duration`).
+#' @param duration A duration.
+#' @param workouts The workouts created with `create_workout()` to be used in the plan. The order of workouts is respected when creating the plan.
+#' @param training_days The training days of a week. Can be a numeric vector (starting with monday = 1) or weekday names (short or full length).
+#'
 #' @return A dataframe containing all training sessions.
 #' @export
 #'
@@ -25,6 +31,7 @@ create_plan <- function(
 #' @param exercise Character vector of the exercises chosen.
 #' @param nset Vector of number of sets per exercise. Must be either length `1` or equal to the length of `exercise`
 #' @param nrep Vector of number of repetitions per set. Must be either length `1` or length of `exercise`.
+#' @param step The step size for increasing the weight from last workout.
 #'
 #' @return A dataframe.
 #' @export
