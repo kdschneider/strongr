@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
 
-name: Test-Coverage (covr)
+name: covr
 
 jobs:
   test-coverage:
