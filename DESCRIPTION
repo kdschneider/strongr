@@ -2,8 +2,15 @@ Package: strongr
 Title: Create Workout-Plans and Log Progress
 Version: 0.0.0.9000
 Authors@R: 
-    person("Konstantin", "Schneider", email = "ks@konstantin-schneider.eu", role = c("aut", "cre"))
-Description: Create workout-plans form a set of input parameters. Log your progress with built in functions.
+  person(
+    given = "Konstantin", 
+    family = "Schneider", 
+    email = "ks@konstantin-schneider.eu", 
+    role = c("aut", "cre")
+  )
+Description: 
+  Create workout-plans form a set of input parameters. 
+  Log your progress with built in functions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
