@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/kdschneider/strongr/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/kdschneider/strongr/actions/workflows/check-standard.yaml)
-[![codecov](https://github.com/kdschneider/strongr/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/kdschneider/strongr/actions/workflows/test-coverage.yaml)
+[![codecov](https://github.com/kdschneider/strongr/actions/workflows/codecov.yaml/badge.svg)](https://github.com/kdschneider/strongr/actions/workflows/codecov.yaml)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
