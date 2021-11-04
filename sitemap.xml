@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://kdschneider.github.io/strongr/index.html</loc>
+  </url>
+  <url>
+    <loc>https://kdschneider.github.io/strongr/reference/add_exercise_stats.html</loc>
+  </url>
+  <url>
+    <loc>https://kdschneider.github.io/strongr/reference/add_info.html</loc>
+  </url>
+  <url>
+    <loc>https://kdschneider.github.io/strongr/reference/add_trainings.html</loc>
+  </url>
+  <url>
+    <loc>https://kdschneider.github.io/strongr/reference/add_weights.html</loc>
+  </url>
+  <url>
+    <loc>https://kdschneider.github.io/strongr/reference/create_daterange_tibble.html</loc>
+  </url>
+  <url>
+    <loc>https://kdschneider.github.io/strongr/reference/create_plan.html</loc>
+  </url>
+  <url>
+    <loc>https://kdschneider.github.io/strongr/reference/filter_weekdays.html</loc>
+  </url>
+  <url>
+    <loc>https://kdschneider.github.io/strongr/reference/nest_trainings.html</loc>
+  </url>
+  <url>
+    <loc>https://kdschneider.github.io/strongr/reference/strongr-package.html</loc>
+  </url>
+</urlset>
