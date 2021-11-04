@@ -19,19 +19,11 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-> This package is very much work in progress!
+> Work in progress!
 
 ## Overview
 
 The goal of strongr is to allow easy creation of workout-plans and logging of progress.
-
-As of now the planned functions are:
-
-  - `create_plan()`: Create a workout-plan from a set of input parameters and/or workouts.
-  - `create_workout()`: Create a specific workout. One or more workouts  can be used to create a plan.
-  - `add_training()`: Add a training session to the workout-plan. You should be able to specifiy if a set was failed. 
-  - `get_next_training()`: Get weights (maybe with warmup weights) for the next training session. 
-  - `deload()`: Failed `x` sets in a row? Time to face the truth and deload...
   
 ## Installation
 
@@ -43,4 +35,7 @@ devtools::install_github("kdschneider/strongr")
 
 ## Usage
 
-`no use as of now, just garbage...`
+```{r willy, echo = FALSE, fig.align='center', fig.cap="what?"}
+knitr::include_graphics("https://media.giphy.com/media/133UgjM4IPvxbq/giphy.gif")
+```
+
