@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/kdschneider/strongr/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/kdschneider/strongr/actions/workflows/check-standard.yaml)
-[![codecov](https://github.com/kdschneider/strongr/actions/workflows/codecov.yaml/badge.svg)](https://github.com/kdschneider/strongr/actions/workflows/codecov.yaml)
+[![codecov](https://codecov.io/gh/kdschneider/strongr/branch/main/graph/badge.svg?token=O2M43ZA074)](https://codecov.io/gh/kdschneider/strongr)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
