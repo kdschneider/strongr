@@ -31,6 +31,7 @@ jobs:
           remotes::install_deps(dependencies = TRUE)
           remotes::install_deps(dependencies = "Config/Needs/website")
           remotes::install_cran("pkgdown")
+          remotes::install_github("kdschneider/strongr")
         shell: Rscript {0}
 
       - name: Deploy pkgdown site
