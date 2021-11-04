@@ -52,7 +52,7 @@ jobs:
         run: |
           install.packages("remotes")
           remotes::install_deps(dependencies = TRUE)
-          remotes::install_cran("rcmdcheck")
+          install.packages("rcmdcheck")
         shell: Rscript {0}
 
       - name: R-CMD-check
