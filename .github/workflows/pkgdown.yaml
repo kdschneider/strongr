@@ -10,7 +10,7 @@ name: pkgdown
 jobs:
   pkgdown:
     name: Build pkgdown site
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
