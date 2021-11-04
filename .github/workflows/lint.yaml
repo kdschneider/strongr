@@ -13,8 +13,9 @@ jobs:
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    
     steps:
-      - name: Checkout
+      - name: Check-Out
         uses: actions/checkout@v2
 
       - name: Setup R
