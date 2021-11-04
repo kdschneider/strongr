@@ -1,55 +1,72 @@
-#' @title Create workout-plan
-#' @description Use workouts/input parameters to create Workout-Plans.
-#'
-#' @param start           A start date.
-#' @param end             A end date (overwrites `duration`).
-#' @param duration        A duration.
-#' @param workouts        The workouts created with `create_workout()` to be used in the plan. The order of workouts is respected when creating the plan.
-#' @param training_days   The training days of a week. Can be a numeric vector (starting with monday = 1) or weekday names (short or full length).
-#'
-#' @return A dataframe containing all training sessions.
-#' @export
-#'
-create_plan <- function(
-  start = Sys.Date(),
-  end = NA,
-  duration = lubridate::duration(num = 12, unit = "weeks"),
-  workouts,
-  training_days = c("Mon", "Wed", "Fri")
-  ) {
+create_plan <- function(start_date, time_span, training_days, workouts, exercise_stats) {
 
-  # tibble(
-  #   date, workout, exercise
-  # )
+  # create df with dates in daterange
+  plan <-
+    create_daterange_tibble(start_date, time_span) |>
+    filter_weekdays(weekdays = training_days) |>
+    add_trainings(workouts) |>
+    add_exercise_stats(exercise_stats) |>
+    add_weights() |>
+    add_info()
+
+  plan
+}
+
+create_daterange_tibble <- function(start_date, time_span) {
+  end_date <- start_date + duration(time_span, "weeks")
+  tibble(date = start_date:end_date) |>
+    mutate(
+      date = as_date(date)
+    )
+}
+# filter dates based on training days selected
+filter_weekdays <- function(data, weekdays) {
+  data |>
+    mutate(
+      weekday = lubridate::wday(date, week_start = 1)
+    ) |>
+    filter(
+      weekday %in% weekdays
+    )
 
 }
 
-#' @title Create a workout
-#'
-#' @description Choose exercises, sets and reps to create specific workouts.
-#'
-#' @param exercise Character vector of the exercises chosen.
-#' @param nset Vector of number of sets per exercise. Must be either length `1` or equal to the length of `exercise`
-#' @param nrep Vector of number of repetitions per set. Must be either length `1` or length of `exercise`.
-#' @param step The step size for increasing the weight from last workout.
-#'
-#' @return A dataframe.
-#' @export
-#'
-#' @examples
-#' create_workout(exercise = c("benchpress", "squat", "overhead_press"), nset = 3, nrep = c(3, 3, 5))
-create_workout <- function(
-  exercise,
-  nset = 3,
-  nrep = 5,
-  step = 1
-  ) {
+add_trainings <- function(data, workouts) {
 
-  tidyr::tibble(
-    exercise,
-    sets = nset,
-    reps = nrep,
-    step = step
+  data |>
+    mutate(
+      training_nr = row_number(),
+      exercises = rep_len(
+        workouts,
+        length.out = max(row_number())
+      )
+    )
+}
+
+add_exercise_stats <- function(data, exercise_stats) {
+  data |>
+    unnest(exercises) |>
+    group_by(exercises) |>
+    mutate(exercise_nr = row_number()) |>
+    left_join(exercise_stats, by = "exercises")
+}
+
+add_weights <- function(data) {
+  data |>
+    mutate(
+    increase = if_else(
+      condition = exercise_nr == 1,
+      true = 0,
+      false = increase
+    ),
+    weight = starting_weight + increase * (exercise_nr - 1)
   )
+}
 
+add_info <- function(data) {
+  data |>
+    mutate(
+    fail = NA,
+    deload = NA
+  )
 }
