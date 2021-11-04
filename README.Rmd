@@ -35,7 +35,6 @@ devtools::install_github("kdschneider/strongr")
 
 ## Usage
 
-```{r willy, echo = FALSE, fig.align='center', fig.cap="what?"}
-knitr::include_graphics("https://media.giphy.com/media/133UgjM4IPvxbq/giphy.gif")
-```
-
+<center>
+  <img src="https://media.giphy.com/media/133UgjM4IPvxbq/giphy.gif"/>
+</center>

@@ -28,4 +28,6 @@ devtools::install_github("kdschneider/strongr")
 
 ## Usage
 
-<img src="https://media.giphy.com/media/133UgjM4IPvxbq/giphy.gif" title="what?" alt="what?" style="display: block; margin: auto;" />
+<center>
+<img src="https://media.giphy.com/media/133UgjM4IPvxbq/giphy.gif"/>
+</center>
