@@ -27,10 +27,10 @@ jobs:
       R_KEEP_PKG_SOURCE: yes
 
     steps:
-      - name: Checkout
+      - name: Check-out
         uses: actions/checkout@v2
 
-      - name: Setup setup-pandoc
+      - name: Setup pandoc
         uses: r-lib/actions/setup-pandoc@v1
 
       - name: Setup R
@@ -56,7 +56,7 @@ jobs:
       #     restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
 
       - name: Install remotes
-        run: install.packages(remotes)
+        run: install.packages("remotes")
         shell: Rscript {0}
 
       - name: Install system dependencies
